@@ -1,0 +1,66 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  authorization_failure: "You are not authorized to perform this action."
+
+  Restaurant_success_msg: "New Restaurant added successfully!"
+  Restaurant_success_failure_msg: "New Restaurant could not be Added!"
+  Restaurant_update_msg: "Restaurant updated successfully!"
+  Restaurant_update_failure_msg: "Restaurant could not be Updated!"
+  Restaurant_destroy_msg: "Restaurant deleted successfully!"
+  Restaurant_destroy_failure_msg: "Restaurant could not be Deleted!"
+  restaurants_overlap_msg: "You cannot Order from more than one restaurant at a time!"
+
+  Item_success_msg: "New Item added successfully!"
+  Item_success_failure_msg: "New Item could not be Added!"
+  Item_update_msg: "Item updated successfully!"
+  Item_update_failure_msg: "Item could not be Updated!"
+  Item_destroy_msg: "Item deleted successfully!"
+  Item_destroy_failure_msg: "Item could not be Deleted!"
+
+  Categoty_success_msg: "New Category added successfully!"
+  Category_success_failure_msg: "Category could not be Added!"
+  Category_destroy_msg: "Category deleted successfully!"
+  Category_destroy_failure_msg: "Category could not be Deleted!"
+
+  Cart_success_msg: "Cart created successfully!"
+  Cart_success_failure_msg: "Cart could not be created!"
+  Cart_update_msg: "Cart updated successfully!"
+  Cart_update_failure_msg: "Cart could not be Updated!"
+  Cart_destroy_msg: "Cart item deleted successfully!"
+  Cart_destroy_failure_msg: "Cart item could not be Deleted!"
+
+  order_success_msg: 'Your Order has been Placed successfully!'
+  signin_first_msg: 'You have to sign in first to place the Order!'
+  order_update_msg: 'Order updated successfully!'
+  order_update_failure_msg: 'Order could not be Updated!'
+  not_found: 'Not found'
