@@ -1,0 +1,716 @@
+/* // Place all the styles related to the restaurants controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/ */
+/*
+
+Template 2076 Zentro
+
+http://www.tooplate.com/view/2076-zentro
+
+*/
+
+
+body
+	{
+		background: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    position: relative;
+	}
+
+.heading {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.subheading {
+  font-size: 16px;
+  padding-bottom: 60px;
+}
+
+p {
+  color: #848484;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  line-height: 28px;
+}
+
+hr {
+	border-top: 2px solid #828282;
+	width: 120px;
+}
+
+#menu, #gallery, #team {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+#menu, #contact {
+  background: #f0f0f0;
+}
+
+.parallax-section {
+  background-attachment: fixed !important;
+  background-size: cover !important;
+}
+
+/* preloader section */
+.preloader  {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99999;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        background: none repeat scroll 0 0 #fff;
+    }
+.sk-spinner-pulse {
+  width: 40px;
+  height: 40px;
+  background-color: #F6D76B;
+  border-radius: 100%;
+  -webkit-animation: sk-pulseScaleOut 1s infinite ease-in-out;
+          animation: sk-pulseScaleOut 1s infinite ease-in-out; }
+
+@-webkit-keyframes sk-pulseScaleOut {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1);
+    opacity: 0; } }
+
+@keyframes sk-pulseScaleOut {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1);
+    opacity: 0; } }
+
+
+/* start navigation */
+.navbar-default {
+  background: #ffffff;
+  box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.04);
+  border: none;
+  margin-bottom: 0;
+}
+.navbar-brand, .navbar-nav li a {
+  line-height: 28px;
+}
+.navbar-default .navbar-brand  {
+  color: #5C5C5C;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.navbar-default .navbar-nav li a {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/* home section */
+#home {
+  background: url('../images/home-bg.jpg') 50% 0 repeat-y fixed;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+#home h1 {
+  font-size: 20px;
+  letter-spacing: 8px;
+  font-style: normal;
+  padding-top: 10px;
+}
+#home .btn {
+  background: transparent;
+  border-radius: 0;
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 16px 42px;
+  margin-top: 40px;
+  transition: all 0.4s ease-in-out;
+}
+#home .btn:hover {
+  background: #ffffff;
+  color: #202020;
+}
+
+/* team section */
+#team {
+  text-align: center;
+}
+#team h3 {
+  font-size: 18px;
+  line-height: 4px;
+}
+#team h4 {
+  color: #5C5C5C;
+  padding-top: 24px;
+}
+#team .col-md-4 {
+ padding-top: 42px;
+}
+
+/* menu section */
+#menu h4 {
+	line-height: 1.5;
+}
+#menu .col-md-8 {
+  padding-bottom: 42px;
+}
+#menu .col-md-6 {
+  padding-bottom: 18px;
+}
+#menu span {
+  color: #5C5C5C;
+}
+
+/* gallery section */
+#gallery {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+#gallery .col-md-4 {
+  padding-top: 52px;
+}
+#gallery img {
+  width: 100%;
+  padding-bottom: 18px;
+}
+#gallery .col-md-4 div {
+  position: relative;
+  bottom: 18px;
+  padding-bottom: 12px;
+}
+#gallery h3 {
+  font-size: 18px;
+  line-height: 8px;
+}
+
+/* contact section */
+#contact {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+#contact .col-md-8 {
+  margin-bottom: 32px;
+}
+#contact .form-control {
+  background: #ffffff;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: all 0.4s ease-in-out;
+}
+#contact .form-control:focus {
+  border-color: #f9f9f9;
+}
+#contact input {
+  height: 48px;
+}
+#contact input[type="submit"] {
+  background: transparent;
+  border: 2px solid #999;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  margin-top: 12px;
+  height: 50px;
+}
+#contact input[type="submit"]:hover {
+  background: #999;
+  color: #ffffff;
+}
+
+/* footer section */
+footer {
+  background: url('../images/footer-bg.jpg') 50% 0 repeat-y fixed;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+footer h2 {
+  padding-bottom: 14px;
+}
+footer h3 {
+  padding-top: 8px;
+}
+footer p {
+  color: #ffffff;
+}
+footer span {
+  font-weight: bold;
+  padding-left: 24px;
+}
+footer .ph, footer .address {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+footer .fa {
+  font-size: 12px;
+  padding-right: 10px;
+}
+
+/* social icon */
+.social-icon {
+  padding: 0;
+}
+.social-icon li {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+}
+.social-icon li a {
+  background: #f0f0f0;
+  border-radius: 50%;
+  color: #5C5C5C;
+  font-size: 16px;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  margin-top: 12px;
+  margin-right: 16px;
+  top: 0;
+  position: relative;
+  padding: 0;
+}
+.social-icon li a:hover {
+  background: #F6D76B;
+  top: 5px;
+}
+
+/* copyright section */
+#copyright {
+  background: #343434;
+  color: #ffffff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+#copyright p {
+  color: #ffffff;
+}
+#copyright a {
+  color: #ffffff;
+}
+#copyright a:hover {
+  color: #FF0;
+}
+/* @import "bootstrap"; */
+ /*
+
+Template 2076 Zentro
+
+http://www.tooplate.com/view/2076-zentro
+
+*/
+/* line 16, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+body {
+  background: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  position: relative;
+}
+
+/* line 24, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+.heading {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+/* line 29, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+.subheading {
+  font-size: 16px;
+  padding-bottom: 60px;
+}
+
+/* line 34, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+p {
+  color: #848484;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  line-height: 28px;
+}
+
+/* line 42, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+hr {
+  border-top: 2px solid #828282;
+  width: 120px;
+}
+
+/* line 47, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+#menu, #gallery, #team {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* line 51, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+#menu, #contact {
+  background: #f0f0f0;
+}
+
+/* line 55, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+.parallax-section {
+  background-attachment: fixed !important;
+  background-size: cover !important;
+}
+
+/* preloader section */
+/* line 61, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: none repeat scroll 0 0 #fff;
+}
+
+/* line 82, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+.sk-spinner-pulse {
+  width: 40px;
+  height: 40px;
+  background-color: #F6D76B;
+  border-radius: 100%;
+  -webkit-animation: sk-pulseScaleOut 1s infinite ease-in-out;
+  animation: sk-pulseScaleOut 1s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-pulseScaleOut {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+@keyframes sk-pulseScaleOut {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+/* start navigation */
+/* line 110, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+.navbar-default {
+  background: #ffffff;
+  box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.04);
+  border: none;
+  margin-bottom: 0;
+}
+
+/* line 116, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+.navbar-brand, .navbar-nav li a {
+  line-height: 28px;
+}
+
+/* line 119, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+.navbar-default .navbar-brand {
+  color: #5C5C5C;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* line 125, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+.navbar-default .navbar-nav li a {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/* home section */
+/* line 131, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+#home {
+  background: url("../images/home-bg.jpg") 50% 0 repeat-y fixed;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* line 148, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+#home h1 {
+  font-size: 20px;
+  letter-spacing: 8px;
+  font-style: normal;
+  padding-top: 10px;
+}
+
+/* line 154, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+#home .btn {
+  background: transparent;
+  border-radius: 0;
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 16px 42px;
+  margin-top: 40px;
+  transition: all 0.4s ease-in-out;
+}
+
+/* line 165, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+#home .btn:hover {
+  background: #ffffff;
+  color: #202020;
+}
+
+/* team section */
+/* line 171, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+#team {
+  text-align: center;
+}
+
+/* line 174, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+#team h3 {
+  font-size: 18px;
+  line-height: 4px;
+}
+
+/* line 178, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+#team h4 {
+  color: #5C5C5C;
+  padding-top: 24px;
+}
+
+/* line 182, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+#team .col-md-4 {
+  padding-top: 42px;
+}
+
+/* menu section */
+/* line 187, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+#menu h4 {
+  line-height: 1.5;
+}
+
+/* line 190, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+#menu .col-md-8 {
+  padding-bottom: 42px;
+}
+
+/* line 193, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+#menu .col-md-6 {
+  padding-bottom: 18px;
+}
+
+/* line 196, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+#menu span {
+  color: #5C5C5C;
+}
+
+/* gallery section */
+/* line 201, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+#gallery {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* line 205, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+#gallery .col-md-4 {
+  padding-top: 52px;
+}
+
+/* line 208, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+#gallery img {
+  width: 100%;
+  padding-bottom: 18px;
+}
+
+/* line 212, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+#gallery .col-md-4 div {
+  position: relative;
+  bottom: 18px;
+  padding-bottom: 12px;
+}
+
+/* line 217, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+#gallery h3 {
+  font-size: 18px;
+  line-height: 8px;
+}
+
+/* contact section */
+/* line 223, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+#contact {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+/* line 227, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+#contact .col-md-8 {
+  margin-bottom: 32px;
+}
+
+/* line 230, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+#contact .form-control {
+  background: #ffffff;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: all 0.4s ease-in-out;
+}
+
+/* line 239, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+#contact .form-control:focus {
+  border-color: #f9f9f9;
+}
+
+/* line 242, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+#contact input {
+  height: 48px;
+}
+
+/* line 245, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+#contact input[type="submit"] {
+  background: transparent;
+  border: 2px solid #999;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  margin-top: 12px;
+  height: 50px;
+}
+
+/* line 253, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+#contact input[type="submit"]:hover {
+  background: #999;
+  color: #ffffff;
+}
+
+/* footer section */
+/* line 259, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+footer {
+  background: url("../images/footer-bg.jpg") 50% 0 repeat-y fixed;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* line 268, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+footer h2 {
+  padding-bottom: 14px;
+}
+
+/* line 271, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+footer h3 {
+  padding-top: 8px;
+}
+
+/* line 274, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+footer p {
+  color: #ffffff;
+}
+
+/* line 277, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+footer span {
+  font-weight: bold;
+  padding-left: 24px;
+}
+
+/* line 281, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+footer .ph, footer .address {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+/* line 285, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+footer .fa {
+  font-size: 12px;
+  padding-right: 10px;
+}
+
+/* social icon */
+/* line 291, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+.social-icon {
+  padding: 0;
+}
+
+/* line 294, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+.social-icon li {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+}
+
+/* line 299, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+.social-icon li a {
+  background: #f0f0f0;
+  border-radius: 50%;
+  color: #5C5C5C;
+  font-size: 16px;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  margin-top: 12px;
+  margin-right: 16px;
+  top: 0;
+  position: relative;
+  padding: 0;
+}
+
+/* line 316, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+.social-icon li a:hover {
+  background: #F6D76B;
+  top: 5px;
+}
+
+/* copyright section */
+/* line 322, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+#copyright {
+  background: #343434;
+  color: #ffffff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+/* line 329, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+#copyright p {
+  color: #ffffff;
+}
+
+/* line 332, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+#copyright a {
+  color: #ffffff;
+}
+
+/* line 335, /home/dev/Documents/DinnerDashV2/app/assets/stylesheets/application.scss */
+#copyright a:hover {
+  color: #FF0;
+}
